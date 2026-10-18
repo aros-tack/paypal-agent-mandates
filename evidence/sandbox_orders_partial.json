@@ -1,0 +1,43 @@
+{
+  "mode": "paypal-sandbox (partial: no buyer approval possible yet)",
+  "at": "2026-10-17T05:16:44Z",
+  "paypal_confirmed": {
+    "order_created": {
+      "order_id": "1NV35781WM1721503",
+      "paypal_status": "PAYER_ACTION_REQUIRED",
+      "amount": {
+        "currency_code": "USD",
+        "value": "10.00",
+        "breakdown": {}
+      },
+      "links": [
+        "self",
+        "payer-action"
+      ],
+      "reference_id": "pur_684eeb31e833"
+    },
+    "early_capture": {
+      "http": 422,
+      "issues": [
+        "ORDER_NOT_APPROVED"
+      ]
+    },
+    "amount_patch": {
+      "accepted": true,
+      "amount_after": {
+        "currency_code": "USD",
+        "value": "24.00",
+        "breakdown": {}
+      }
+    },
+    "idempotent_create": {
+      "same_order_id": true,
+      "order_id": "13X47335NL710144M"
+    },
+    "unknown_order": {
+      "http": 404
+    }
+  },
+  "local_assertion_early_capture_refused_by_mandate": "PENDING_APPROVAL",
+  "audit_chain": "1 records verified"
+}

@@ -1,0 +1,13 @@
+{
+  "mandate_id": "mdt_demo_001",
+  "agent_id": "research-assistant",
+  "currency": "USD",
+  "per_purchase_cap": "75.00",
+  "daily_cap": "120.00",
+  "monthly_cap": "400.00",
+  "allowed_categories": ["software", "data", "cloud", "books"],
+  "denied_merchants": ["giftcards.example"],
+  "max_open_orders": 2,
+  "velocity_per_hour": 6,
+  "notes": "Research agent: small software/data purchases. A human approves every payment on PayPal."
+}
