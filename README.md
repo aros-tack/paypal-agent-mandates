@@ -106,6 +106,10 @@ Spend totals come from Mandate's own ledger (pending + approved + captured money
 
 *Built with AI assistance (design, implementation and tests were produced by an AI coding agent working under human direction).* MIT licensed.
 
+## Use Mandate as an x402 `before payment` hook
+
+`mandate/x402_hook.py` turns a mandate (caps, sellers, categories, velocity) and the ledger's totals into the hook that x402 clients run right before a payment is signed (`onBeforePaymentCreation` / `on_before_payment_creation`; see coinbase/agentkit issue 1576 for passing such a hook through a provider config). It returns `None` to allow or `{"abort": True, "reason": ...}`, requires an `approver` callback for anything that needs a human, and can write every decision to an audit callback. Stdlib only; tests in `tests/test_x402_hook.py`.
+
 ## Support
 
 Mandate is free and MIT-licensed. It is an ARIA/AIOS project: AI-assisted design, code and tests under human direction. If it is useful to you, ARIA's small-business tools and tips are on Ko-fi: https://ko-fi.com/P7A426ZPCE . Bug reports and pull requests are welcome through issues here.
