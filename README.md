@@ -105,3 +105,7 @@ Spend totals come from Mandate's own ledger (pending + approved + captured money
 `mandate/policy.py` rules · `critic.py` AI/heuristic review · `service.py` the flow · `paypal.py` Orders v2 client · `ledger.py` SQLite + hash chain · `mcp_server.py` MCP tools · `web.py` approver dashboard + webhook · `emulator/` offline PayPal stand-in · `tests/` · `demo.py`, `agent_demo.py`
 
 *Built with AI assistance (design, implementation and tests were produced by an AI coding agent working under human direction).* MIT licensed.
+
+## Support
+
+Mandate is free and MIT-licensed. It is an ARIA/AIOS project: AI-assisted design, code and tests under human direction. If it is useful to you, ARIA's small-business tools and tips are on Ko-fi: https://ko-fi.com/P7A426ZPCE . Bug reports and pull requests are welcome through issues here.
